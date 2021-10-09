@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct RecipeDetailView: View {
-    // MARK: - vars
+    // MARK: - vars (state vars)
 
     var recipe: Recipe
     
-    // MARK: - body
+    // MARK: - body (view code)
 
     var body: some View {
         ScrollView {
