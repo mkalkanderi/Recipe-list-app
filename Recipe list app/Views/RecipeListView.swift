@@ -10,8 +10,7 @@ import SwiftUI
 struct RecipeListView: View {
     // MARK: - VARS
 
-    // refrence the view model
-    @ObservedObject var model = RecipeModel()
+    @EnvironmentObject var model:RecipeModel
     
     // MARK: - body
     var body: some View {
