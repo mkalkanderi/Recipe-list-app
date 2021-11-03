@@ -11,7 +11,7 @@ struct RecipeListView: View {
     // MARK: - VARS
     
     @EnvironmentObject var model: RecipeModel
-    
+    @State var selectedIndex = "1"
     // MARK: - body
     
     var body: some View {
@@ -31,7 +31,7 @@ struct RecipeListView: View {
                             NavigationLink(
                                 destination: RecipeDetailView(recipe: r),
                                 
-                                // MARK: ROW ITEM
+                                // MARK:- ROW ITEM
                                 
                                 label: {
                                     HStack(spacing: 20.0) {
@@ -48,6 +48,7 @@ struct RecipeListView: View {
                         }
                     }
                 }
+               
             }
             .navigationBarHidden(true)
             .padding(.leading)
